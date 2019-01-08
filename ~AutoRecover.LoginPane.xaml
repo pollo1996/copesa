@@ -63,6 +63,7 @@
                 VerticalOptions="Center">
                     </Label>
                     <Switch
+                IsToggled="{Binding IsRemembered, Mode=TwoWay}"
                 HorizontalOptions="End">
                     </Switch>
                 </StackLayout>
@@ -80,6 +81,7 @@
                     <Button
                 BackgroundColor="Navy"
                 BorderRadius="23"
+                Command="{Binding LoginCommand}"
                 HeightRequest="46"
                 HorizontalOptions="FillAndExpand"
                 Text="Entrar"
